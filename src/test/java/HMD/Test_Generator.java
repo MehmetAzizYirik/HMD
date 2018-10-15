@@ -25,6 +25,7 @@ import java.io.IOException;
 
 public class Test_Generator {
 	private IAtomContainer atomContainer;
+	public  String Desktop=(System.getProperty("user.home") + "\\Desktop").replace("\\", "/");
 	@Before
 	/**
 	 * This function is for clearing the lists if there are something stored
@@ -140,7 +141,7 @@ public class Test_Generator {
 	 * The function is simply for depiction of molecules.
 	 *
 	public void test_depict() throws CloneNotSupportedException, CDKException, IOException {
-		Generator.depict(atomContainer,"C:\\Users\\mehme\\Desktop\\example.png"); 
+		Generator.depict(atomContainer,Desktop+"\\example.png"); 
 	}**/
 	
 	@Test
@@ -164,7 +165,7 @@ public class Test_Generator {
 	public void test_atomsat() throws CloneNotSupportedException, CDKException, IOException {
 		cleanlists();
 		IAtomContainer mol=Generator.build("C2C2C1C1C1C1");
-		SDFWriter outFile = new SDFWriter(new FileWriter("..\\maygenjunit\\bin\\output.sdf"));
+		SDFWriter outFile = new SDFWriter(new FileWriter(Desktop+"\\testoutput.sdf"));
 		//By calling the atomsat for the index 0, 5 structures are expected to be generated.
 		assertEquals(5,Generator.atomsat(mol,0,outFile).size());
 	}
@@ -176,7 +177,7 @@ public class Test_Generator {
 	 */
 	public void test_genall()  throws CloneNotSupportedException, CDKException, IOException{
 		cleanlists();
-		SDFWriter outFile = new SDFWriter(new FileWriter("..\\maygenjunit\\bin\\output.sdf"));
+		SDFWriter outFile = new SDFWriter(new FileWriter(Desktop+"\\testoutput.sdf"));
 		List<IAtomContainer> mols= new ArrayList<IAtomContainer>();
 		IAtomContainer mol=Generator.build("C3C3C2C2C1C1");
 		mols.add(mol);
