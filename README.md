@@ -32,7 +32,7 @@ To compile HMD, Apache Maven and Java 1.8 (or later) are required.
 ```
 HMD/$ mvn package
 ```
-This command will create all-in-one jar file under target folder.
+This command will create jar file named specifically as "jar-with-dependencies" under target folder.
 
 ## Usage
 
