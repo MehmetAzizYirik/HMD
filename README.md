@@ -17,16 +17,29 @@ atomsat() : This function extends the molecule until the chosen index, atom, is 
 atomext() : This function extends the atom in the atomcontainer by adding a new bond ( or increasing bond order) between the atom and the others.
 ```
 
-## Downloading
+## Download Source Code
 
-The runnable jar of the project [HMD.jar](https://github.com/MehmetAzizYirik/HMD/blob/master/src/main/HMD.jar) is  shared under this repository. Later, Maven is going to be used for it.
+It is assumed that users have git on their system and have initialised their local directory. For more information [set-up-git](https://help.github.com/articles/set-up-git/ )
+
+To download HMD source code:
+
+```
+$ git clone https://github.com/MehmetAzizYirik/HMD.git
+```
+## Compiling
+
+To compile HMD, Apache Maven and Java 1.8 (or later) are required.
+```
+HMD/$ mvn package
+```
+This command will create all-in-one jar file under target folder.
 
 ## Usage
 
 HMD.jar can be run from command line with the specified arguments. An example command is given below.
 
 ```
-java -jar HMD.jar -i C3C3C2C2C1C1 -v -d C:\Users\UserName\Desktop\
+java -jar HMD.jar -i C3C3C2C2C1C1 -v -d C:\Users\UserName\Desktop\hmd
 ```
 
 The definitions of the arguments are given below:
