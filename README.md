@@ -65,7 +65,7 @@ Please report issues at https://github.com/MehmetAzizYirik/HMD
 
 ## Running the Tests
 
-For the Generator class, a test class called Tes-Generator is built. This test class includes the tests of the main functions. The outputs of the the functions are tested based on the size ( or the length) of the expected output files. 
+For the Generator class, a test class called Test-Generator is built. This test class includes the tests of the main functions. The outputs of the the functions are tested based on the size ( or the length) of the expected output files. 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/MehmetAzizYirik/HMD/blob/master/LICENSE) file for details
