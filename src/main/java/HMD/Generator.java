@@ -173,7 +173,7 @@ public class Generator {
 		List<Integer> e =new ArrayList<Integer>();
         ListMultimap<String, Integer> ec=ecenumlist(mol);
         Object[] array=ec.keySet().toArray();
-        for(int i=0;i<array.length-1;i++) {
+        for(int i=0;i<array.length;i++) {
         	for(int j:ec.get((String)array[i])){
         		e.add(j);
         	}
