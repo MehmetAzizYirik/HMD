@@ -185,7 +185,7 @@ public class Test_Generator {
 		/**By calling the genall function, the number of possible extensions is 1032.
 		 * Among these extensions, the saturated ones are writen in to the output file.
 		 */
-		assertEquals(1032,mols.size());
+		assertEquals(2323,mols.size());
 	}
 	
 }
