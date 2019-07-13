@@ -367,7 +367,7 @@ public class Generator {
 					+ "Besides this molecular information, the directory is needed to be specified for the output"
 					+ "file. \n\n";
 			String footer = "\nPlease report issues at https://github.com/MehmetAzizYirik/HMD";
-			formatter.printHelp( "java -jar maygen.jar", header, options, footer, true );
+			formatter.printHelp( "java -jar HMD.jar", header, options, footer, true );
 			throw new ParseException("Problem parsing command line");
 		}
 	}
