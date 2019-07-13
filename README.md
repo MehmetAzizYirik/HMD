@@ -45,7 +45,7 @@ java -jar HMD.jar -i C3C3C2C2C1C1 -v -d C:\Users\UserName\Desktop\hmd
 The definitions of the arguments are given below:
 
 ```
-usage: java -jar maygen.jar -i <arg> [-v] -d <arg>
+usage: java -jar HMD.jar -i <arg> [-v] -d <arg>
 
 Generates structures for a given molecular information. The input is the
 string of atom symbols with their number of implicit hydrogen.For example
